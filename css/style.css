@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  /* border-radius: 5px; */
+  background-color: #f2f2f2;
+  font-family: Arial;
+  padding: 20px;
+  box-shadow: 0 4px 4px 2px rgba(0,0,0,0.2);
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  font-weight: bold;
+}
+
+input[type="text"], input[type="number"], input[type="password"], select {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid red;
+  /* border-radius: 4px; */
+  padding: 12px;
+  font-size: 14px;
+}
+input:focus {
+  font-size: 18px;
+  border-bottom: 3px solid red;
+  transition: 0.4s;
+}
+
+.center {
+  margin: auto;
+  text-align: center;
+}
+
+.col {
+  float: left;
+  width: 100%;
+  margin-top: 8px;
+}
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 8px;
+}
+.col-50 {
+  float: left;
+  width: 50%;
+  margin-top: 8px;
+}
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 8px;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.btn {
+  color: white;
+  background-color: #156ce8;
+  border: none;
+  padding: 12px 20px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  /* border-radius: 4px; */
+}
+.btn:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.btn:disabled {
+  opacity: 0.5;
+  cursor: default;
+  box-shadow: none;
+}
+
+.tbl {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  border: 2px solid #4CAF50;
+}
+.tbl th, .tbl td {
+  text-align: left;
+  padding: 8px;
+  border: 1px solid black;
+}
+.tbl tr:nth-child(even) {
+  background-color:  #ffb3b3
+;
+}
+.tbl th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.finalResult {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.avater {
+  height: 150px;
+  width: 135px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  margin: auto;
+}
+
+.con-footer {
+  border-top: 1px solid #ccc;
+  margin: 15px 0;
+}
+
+@media screen and (max-width: 600px) {
+  .col-25, .col-50, .col-75, .btn {
+    width: 100%;
+    margin-top: 0;
+  }
+}
