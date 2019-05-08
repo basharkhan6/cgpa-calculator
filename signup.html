@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Sign Up - CGPA Calculator</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1 style="text-align: center; text-decoration: underline;">Sign Up</h1>
+    <div class="row">
+      <div class="col-25">
+        <label for="email">Email:</label>
+      </div>
+      <div class="col-75">
+        <input type="text" name="email">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="fullName">Full Name:</label>
+      </div>
+      <div class="col-75">
+        <input type="text" name="fullName">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="varsity">University:</label>
+      </div>
+      <div class="col-75">
+        <select class="" name="varsity">
+          <option value="DIU">DIU - Daffodil International University</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="uname">Username:</label>
+      </div>
+      <div class="col-75">
+        <input type="text" name="uname">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="password">Password:</label>
+      </div>
+      <div class="col-75">
+        <input type="password" name="password">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <button type="button" class="btn" id="btnSignUp" name="btnSignUp" disabled>Sign Up</button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <input type="checkbox" id="agree" name="agree" value="agree" onclick="checkAgree()">Agree with our <a href="terms.html">Terms</a> and <a href="conditions.html">Conditions</a>.
+      </div>
+    </div>
+    <div class="con-footer">
+      <div class="row">
+        <div class="col-25">
+          <a href="index.html" class="btn" style="background-color: #f44336;">Cancel</a>
+        </div>
+        <div class="col-75" style="margin-top: 20px; text-align: right;">
+          Not a new member? Please login <a href="login.html">here</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script type="text/javascript" src="js/cal.js"></script>
+</body>
+</html>
